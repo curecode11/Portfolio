@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    min-height: 100vh;
+    background-color: black;
+}
+.main{
+    text-align: center;
+    padding: 30px;
+}
+.heading{
+    width: fit-content;
+    margin: -20px auto;
+    color: orangered ;
+    font-weight: 700;
+}
+input{
+    border: 4px solid greenyellow;
+    width: 40vw;
+    background: #000;
+    color: wheat;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(34, 31, 31);
+}
+.form{
+    color: wheat;
+    font-weight: 500;
+    margin: 40px ;
+    padding: 40px;
+}
+
+textarea{
+    border: 4px solid greenyellow;
+    background-color: rgb(34, 31, 31);
+    color: wheat;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn{
+    background-color: rgb(52, 192, 52);
+    padding: 5px;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.conn{
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}

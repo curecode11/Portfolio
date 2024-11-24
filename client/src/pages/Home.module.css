@@ -1,0 +1,73 @@
+.cont{
+  background-color: black; /* Set background color to black */
+  color: white; /* Optional: to make text visible on a black background */
+  min-height: 100vh; 
+}
+.content {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  justify-content: space-around; /* Space between buttons and image */
+  align-items: center; /* Align items vertically in the center */
+  padding: 20px;
+  gap: 20px; /* Add spacing between items */
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff; /* Primary blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.img {
+  width: 250px; /* Set max width for the image */
+  height: 250px;
+  border-radius: 2000px; /* Optional: Rounded corners */
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+.name{
+  width: fit-content;
+  margin: 20px auto;
+  color: orangered;
+  font-weight: 900;
+  font-size: 4vw;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* .img{
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    display: inline;
+    margin: 50px auto;
+    border-radius: 200px;
+    transition: box-shadow 0.5s ease, transform 0.3s ease;  
+} */
+.img:hover{
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1), 0px 0px 15px orangered;
+  transform: translateY(-5px);
+}
+.line{
+  width: fit-content;
+  margin: 50px auto;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+.word{
+  color: green;
+  font-weight: bold;
+}
+.btn1{
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,30 @@
+.page{
+    min-height: 100vh;
+    background-color: black;
+}
+.heading{
+    width: fit-content;
+    margin: 10px auto;
+    color: orangered;
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+img {
+    width: 100%;
+    height: 120px;
+    display: block;
+  }
+.project{
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(61, 54, 54);
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    border:5px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}

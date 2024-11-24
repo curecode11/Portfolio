@@ -1,0 +1,51 @@
+
+.page{
+    min-height: 100vh;
+    background-color: black;
+}
+pre {
+    font-family: monospace;
+    white-space: pre-wrap; /* Ensure it wraps if needed */
+  }
+.heading{
+    width: fit-content;
+    margin: 10px auto;
+    color: orangered ;
+    font-weight: 700;
+}
+.intro{
+    color: wheat;
+    text-align: center;
+    font-size: 20px;
+}
+.skills{
+    width: 80vw;
+    color: wheat;
+    margin: 20px auto;
+}
+.Education{
+    width: 80vw;
+    color: wheat;
+    margin: 20px auto;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: rgb(43, 43, 43);
+}
+.achievment{
+    width: 80vw;
+    color: wheat;
+    margin: 20px auto;
+}
