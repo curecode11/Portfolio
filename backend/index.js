@@ -116,8 +116,4 @@ app.get('/projects', (req, res) => {
 
 app.listen(process.env.PORT, () => {
   console.log("jai shri ram");
-  console.log(process.env.DB_HOST);
-  console.log(process.env.DB_NAME);
-  console.log(process.env.DB_PASSWORD);
-  console.log(process.env.DB_USER);
 })
