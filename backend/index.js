@@ -1,23 +1,24 @@
+import { config } from 'dotenv'
+config();
 import express from 'express'
 import mysql from 'mysql2'
 import cors from 'cors'
 import emailValidator from 'email-validator'
 import nodemailer from 'nodemailer'
 import rateLimit from 'express-rate-limit'
-import { config } from 'dotenv'
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "mysqlking123@",
-  database: process.env.DB_NAME || "contacts"
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 })
 
 const dbproj = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "mysqlking123@",
-  database: process.env.DB_NAME_PRO || "projects"
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 });
 
 
@@ -26,7 +27,6 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
-config();
 
 const contactLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour rate limit 
@@ -116,4 +116,8 @@ app.get('/projects', (req, res) => {
 
 app.listen(process.env.PORT, () => {
   console.log("jai shri ram");
+  console.log(process.env.DB_HOST);
+  console.log(process.env.DB_NAME);
+  console.log(process.env.DB_PASSWORD);
+  console.log(process.env.DB_USER);
 })
