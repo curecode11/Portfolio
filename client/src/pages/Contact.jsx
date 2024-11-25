@@ -1,5 +1,3 @@
-import {config} from 'dotenv'
-config();
 import { Link } from 'react-router-dom'
 import styles from './Contact.module.css'
 import { useState } from 'react'
