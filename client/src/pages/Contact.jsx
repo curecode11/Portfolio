@@ -1,3 +1,5 @@
+import {config} from 'dotenv'
+config();
 import { Link } from 'react-router-dom'
 import styles from './Contact.module.css'
 import { useState } from 'react'
@@ -24,7 +26,7 @@ const Contact = () => {
     const handlesubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:4000/send", user);
+            const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/send`, user);
             alert("thanks for connecting")
             navigate('/');
         }
