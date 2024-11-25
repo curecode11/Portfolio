@@ -24,7 +24,7 @@ const Contact = () => {
     const handlesubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/send`, user);
+            const res = await axios.post(`https://ronak-748n.onrender.com/send`, user);
             alert("thanks for connecting")
             navigate('/');
         }
