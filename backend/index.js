@@ -7,11 +7,10 @@ import emailValidator from 'email-validator'
 import nodemailer from 'nodemailer'
 import rateLimit from 'express-rate-limit'
 
-app.set('trust proxy', 1)
 
 // const db = mysql.createConnection({
-//   host: process.env.DB_HOST,
-//   user: process.env.DB_USER,
+  //   host: process.env.DB_HOST,
+  //   user: process.env.DB_USER,
 //   password: process.env.DB_PASSWORD,
 //   database: process.env.DB_NAME
 // })
@@ -28,8 +27,8 @@ const db = mysql.createPool({
 });
 
 // const dbproj = mysql.createConnection({
-//   host: process.env.DB_HOST,
-//   user: process.env.DB_USER,
+  //   host: process.env.DB_HOST,
+  //   user: process.env.DB_USER,
 //   password: process.env.DB_PASSWORD,
 //   database: process.env.DB_NAME
 // });
@@ -49,6 +48,7 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
+app.set('trust proxy', 1)
 
 const contactLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour rate limit 
