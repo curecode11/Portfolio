@@ -6,12 +6,12 @@ import React from 'react'
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const [fetched, setfetched] = useState(true);
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                console.log(process.env.REACT_APP_BACKEND_URL);
                 const response = await axios.get(`https://ronak-748n.onrender.com/projects`);
-                console.log(response.data)
+                setfetched(false);
                 setProjects(response.data);
             } catch (error) {
                 console.error('Error fetching projects:', error);
@@ -39,21 +39,25 @@ const Projects = () => {
                 </ul>
 
                 <h1 className={styles.heading}>My Projects</h1>
-
-                <div className={styles.main}>
-                    {projects.map((project) => (
-                        <div key={project.id} className={styles.project}>
-                            <img src={project.image_url} alt="image" />
-
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <a href={project.project_link} target="_blank" rel="noopener noreferrer">
-                                View Project
-                            </a>
-
-                        </div>
-                    ))}
-                </div>
+                {fetched ? (
+                    <div className={styles.spinnercont}>
+                        <div className={styles.spinner}></div>
+                    </div>
+                ) : (
+                    <div className={styles.main}>
+                        {projects.map((project) => (
+                            <div key={project.id} className={styles.project}>
+                                <img src={project.image_url} alt="image" />
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <a href={project.project_link} target="_blank" rel="noopener noreferrer">
+                                    <button className={styles.btn}>view project</button>
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                )
+                }
             </div>
 
         </>
