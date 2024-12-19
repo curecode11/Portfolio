@@ -41,7 +41,6 @@ const Projects = () => {
                 <h1 className={styles.heading}>My Projects</h1>
                 {fetched ? (
                     <div className={styles.spinnercont}>
-                        <div className={styles.spinner}></div>
                     </div>
                 ) : (
                     <div className={styles.main}>
