@@ -9,16 +9,16 @@ const About = () => {
 
                 <ul className="nav justify-content-center text-bg-dark pt-4 pb-4 ">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#"><Link className='text-white' to='/'>Home</Link></a>
+                        <a className="nav-link active" aria-current="page" href="#"><Link className={styles.und} to='/'>Home</Link></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><Link className='text-white' to='/about'>About me</Link></a>
+                        <a className="nav-link" href="#"><Link className={styles.und} to='/about'>About me</Link></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><Link className='text-white' to='/contact'>Contact</Link></a>
+                        <a className="nav-link" href="#"><Link className={styles.und} to='/contact'>Contact</Link></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" ><Link className='text-white' to='/project'>My Projects</Link></a>
+                        <a className="nav-link" ><Link className={styles.und} to='/project'>My Projects</Link></a>
                     </li>
                 </ul>
                 <div className={styles.main}>

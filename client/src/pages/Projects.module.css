@@ -47,7 +47,14 @@ img {
     border-radius: 200px;
     animation: spin 1s linear infinite;
 }
+.und{
+  text-decoration: none;
+  color: slategray;
+  font-weight: 600;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
 
+}
 
 @keyframes spin {
     from {
