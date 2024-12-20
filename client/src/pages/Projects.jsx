@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import styles from './Projects.module.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import Footer from './Footer'
 import React from 'react'
 
 const Projects = () => {
@@ -58,7 +59,7 @@ const Projects = () => {
                 )
                 }
             </div>
-
+            <Footer/>
         </>
     )
 }

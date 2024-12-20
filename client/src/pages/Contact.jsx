@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Contact.module.css'
 import { useState } from 'react'
+import Footer from './Footer'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -79,7 +80,7 @@ const Contact = () => {
                 </div>
 
             </div>
-
+            <Footer/>
         </>
     )
 }

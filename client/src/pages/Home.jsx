@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 import React from 'react'
+import Footer from './Footer'
 const Home = () => {
     return (
         <>
@@ -31,8 +32,10 @@ const Home = () => {
                     </div>
                     <h1 className={styles.line}>I AM <span className={styles.word}>Programmer</span></h1>
                 </div>
-
             </div>
+            {/* <footer> */}
+                <Footer />
+            {/* </footer> */}
         </>
     )
 }

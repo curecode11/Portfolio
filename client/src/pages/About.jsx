@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './About.module.css'
+import Footer from './Footer'
 import React from 'react'
 
 const About = () => {
@@ -82,6 +83,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
