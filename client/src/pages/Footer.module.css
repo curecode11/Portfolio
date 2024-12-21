@@ -1,14 +1,18 @@
 .cont{
     background-color: rgb(32, 32, 32);
-    height: 10vh;
+    /* height: 10vh; */
     color: wheat;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: space-around;
     align-items: center;
 }
 .link{
     margin-left: 20px;
     margin-right: 20px;
+}
+.links{
+    margin-top: 10px;
 }
 .img{
     display: inline;
