@@ -32,13 +32,18 @@ const About = () => {
                     <div className={styles.skills}>
                         <pre>
                             <h2>Technical Skills</h2>
-                            Languages : C/C++, Java, JavaScript, SQL
+                            <h3>Languages :</h3>
+                            
+                            <img src="https://skillicons.dev/icons?i=c,cpp,java,js,py" className={styles.img}/>
                             <br />
-                            Databases : MySql, MongoDB(Novice)
+                            <h3>Databases :</h3> 
+                            <img src="https://skillicons.dev/icons?i=mysql,mongodb" className={styles.img}/>
                             <br />
-                            Frameworks : React.js, Node.js, Express.js, Embedded JS
+                            <h3>Frameworks :</h3>
+                            <img src="https://skillicons.dev/icons?i=react,express,nodejs,bootstrap" className={styles.img}/>
                             <br />
-                            Other: Git, Linux, VScode, OOPS, HTML5, CSS3
+                            <h3>Other :</h3>
+                            <img src="https://skillicons.dev/icons?i=git,linux,vscode,html,css,latex" className={styles.img}/>
                         </pre>
                     </div>
 
