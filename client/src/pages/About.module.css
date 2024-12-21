@@ -1,12 +1,15 @@
-
+body{
+    background-color: black;
+}
 .page{
     min-height: 100vh;
     background-color: black;
+    padding-bottom: 30px;
 }
 pre {
     font-family: monospace;
-    white-space: pre-wrap; /* Ensure it wraps if needed */
-  }
+    white-space: pre-wrap; 
+}
 .heading{
     width: fit-content;
     margin: 10px auto;
@@ -30,7 +33,7 @@ pre {
     
 }
 table {
-    width: 100%;
+    width: 80vw;
     border-collapse: collapse;
     margin: 10px 0;
 }
@@ -47,7 +50,7 @@ th {
 .achievment{
     width: 80vw;
     color: wheat;
-    margin: 20px auto;
+    margin:  20px auto;
 }
 .und{
     text-decoration: none;

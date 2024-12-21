@@ -7,7 +7,6 @@ const About = () => {
     return (
         <>
             <div className={styles.page}>
-
                 <ul className="nav justify-content-center text-bg-dark pt-4 pb-4 ">
                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="#"><Link className={styles.und} to='/'>Home</Link></a>
@@ -32,7 +31,7 @@ const About = () => {
 
                     <div className={styles.skills}>
                         <pre>
-                        <h2>Technical Skills</h2>
+                            <h2>Technical Skills</h2>
                             Languages : C/C++, Java, JavaScript, SQL
                             <br />
                             Databases : MySql, MongoDB(Novice)
@@ -45,7 +44,7 @@ const About = () => {
 
                     <div className={styles.Education}>
                         <pre>
-                        <h2>Education</h2>
+                            <h2>Education</h2>
                             <table>
                                 <thead>
                                     <tr>
@@ -65,14 +64,14 @@ const About = () => {
                                         <td>University of Delhi</td>
                                         <td>8.05</td>
                                     </tr>
-                                    
                                 </tbody>
                             </table>
                         </pre>
                     </div>
+
                     <div className={styles.achievment}>
                         <pre>
-                        <h2>Achievment</h2>
+                            <h2>Achievment</h2>
                             <ol>
                                 <li>Solved more than 500 DSA problems across different coding platforms with 350+ at <em>leetcode</em> and 200+ at <em>geeks for geeks</em>.</li>
                                 <li>Ranked among top 150 coders in gfg University rankings.</li>
